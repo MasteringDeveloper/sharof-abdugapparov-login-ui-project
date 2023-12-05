@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharof's Login UI Project</title>
+    <link rel="stylesheet" href="login-styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="password" id="passwordInput" placeholder="Password" required>
+                <span class="password-toggle" onclick="togglePassword()">
+                    <i id="lockIcon" class='bx bxs-lock'></i>
+                </span>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Remember me</label>
+                <a href="#"> Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn">Login</button>  
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+            <div class="separator">Or</div><br>
+
+            <div class="social-signin">
+                <button type="submit" class="google-field">
+                    <i class='bx bxl-google google-icon'></i>Continue with Google</button>
+                <button type="submit" class="facebook-field">
+                    <i class='bx bxl-facebook-square facebook-icon'></i>Continue with Facebook</button>
+                <button type="submit" class="apple-field">
+                    <i class='bx bxl-apple apple-icon' ></i>Continue with Apple</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
