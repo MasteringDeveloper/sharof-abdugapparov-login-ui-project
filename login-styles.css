@@ -237,3 +237,8 @@ body {
     margin-right: 10px;
     font-size: 24px;
   }
+
+  .wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+  }
